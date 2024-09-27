@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table Cheatsheet</title>
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>HTML Table Breakdown</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Element Name</th>
+          <th>Element Tag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Table</td>
+          <td class="code">&lttable&gt</td>
+        </tr>
+        <tr>
+          <td>Table Head</td>
+          <td class="code">&ltthead&gt</td>
+        </tr>
+        <tr>
+          <td>Table Body</td>
+          <td class="code">&lttbody&gt</td>
+        </tr>
+        <tr>
+          <td>Table Footer</td>
+          <td class="code">&lttfoot&gt</td>
+        </tr>
+        <tr>
+          <td>Table Row</td>
+          <td class="code">&lttr&gt</td>
+        </tr>
+        <tr>
+          <td>Table Heading</td>
+          <td class="code">&ltth&gt</td>
+        </tr>
+        <tr>
+          <td>Table Data</td>
+          <td class="code">&lttd&gt</td>
+        </tr>
+      </tbody>
+    </table>
+    <section>
+      <h2>Tag Usage and Examples</h2>
+      <div>
+        <img src="./resources/images/table.png" alt="" />
+        <p>
+          The <span>&lttable&gt</span> element contains content that is used to
+          represent a two-dimensional table consisting of rows and columns.
+        </p>
+      </div>
+      <div>
+        <img src="./resources/images/table headings.png" alt="" />
+        <p>
+          The <span>&ltthead&gt</span> element is used to define the headings of
+          table columns encapsulated in table rows.
+        </p>
+      </div>
+      <div>
+        <img src="./resources/images/table body.png" alt="" />
+        <p class="center-align">
+          The <span>&lttbody&gt</span> tag is a semantic tag that houses all
+          table data other than table heading and table footer content.
+        </p>
+      </div>
+      <div>
+        <img src="./resources/images/table footer.png" alt="" />
+        <p>
+          The <span>&lttfoot&gt</span> tag uses table rows to give footer
+          content or to summarize content at the end of a table.
+        </p>
+      </div>
+      <div>
+        <img src="./resources/images/table rows (element).png" alt="" />
+        <p>
+          This <span>&lttr&gt</span> element is used to add rows to a table
+          before adding table data and table headings.
+        </p>
+      </div>
+      <div>
+        <img src="./resources/images/table heading (element).png" alt="" />
+        <p>
+          This element <span>&ltth&gt</span> is used to add titles to rows and
+          columns of a table and just like the <span>&lttd&gt</span> element, it
+          must be enclosed in a <span>&lttr&gt</span> element.
+        </p>
+      </div>
+      <div>
+        <img src="./resources/images/table data (element).png" alt="" />
+        <p>
+          This <span>&lttd&gt</span> element can be nested inside a
+          <span>&lttr&gt</span> element to add a cell of data to a table.
+        </p>
+      </div>
+      <div>
+        <img src="./resources/images/colspan (attribute).png" alt="" />
+        <p class="resize">
+          This <em>colspan</em> attribute on a <span>&ltth&gt</span> or
+          <span>&lttd&gt</span>
+          element indicates how many columns that particular cell should span
+          within the table. Its value will take any positive integer between 1
+          and 1000 with 1 being the default value.
+        </p>
+      </div>
+      <div>
+        <img src="./resources/images/rowspan (attribute).png" alt="" />
+        <p class="resize">
+          Just like the <em>colspan</em> attribute, the
+          <em>rowspan</em> attribute on a <span>&ltth&gt</span> or
+          <span>&lttd&gt</span> element indicates how many rows that particular
+          cell should span within the table. While the default value is set to
+          1, it will take any positive integer up to 65534.
+        </p>
+      </div>
+    </section>
+    <aside>
+      <h2><strong>Recuerda</strong></h2>
+      <ul>
+        <li>
+          Always nest the <span>&ltth&gt</span> or
+          <span>&lttd&gt</span> elements inside of a
+          <span>&lttr&gt</span>
+          element before adding any form of information to the table
+        </li>
+        <li>
+          These tags, <span>&ltthead&gt</span>,
+          <span>&lttbody&gt</span>, and
+          <span>&lttfoot&gt</span> are important semantic tags
+          used in organizing the structure of content within a table
+        </li>
+        <li>
+          Remove adjacent cells when applying the
+          <em>colspan</em> or
+          <em>rowspan</em> attributes to the
+          <span>&ltth&gt</span> or
+          <span>&lttd&gt</span> elements for a cleaner and more
+          predictable layout
+        </li>
+        <li>
+          Nest additional <span>&lttd&gt</span> or
+          <span>&ltth&gt</span> child elements within the same
+          <span>&lttr&gt</span> parent element to add cells
+          horizontally (in a row) or in adjacent/different
+          <span>&lttr&gt</span> elements to add cells vertically
+          (in a column)
+        </li>
+      </ul>
+    </aside>
+    <footer>
+        <p>&copy Copyright of Devin Sloan</p><br>
+        <a href="#">Home</a>
+    </footer>
+  </body>
+</html>

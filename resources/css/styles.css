@@ -77,26 +77,15 @@ span {
     background-color: yellow;
 }
 
-li span {
-    all: unset;
-    font-family: "Lato", sans-serif;
-    background-color: powderblue;
-    border: 1px solid black;
-    padding: 2px;
-}
-
 em {
     background-color: yellow;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0;
 }
 
-li em {
-    all: unset;
-    font-family: "Lato", sans-serif;
-    background-color: powderblue;
-    border: 1px solid black;
-    padding: 2px;
+li em, li span {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightyellow;
     font-style: italic;
 }
 
